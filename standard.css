@@ -3,6 +3,7 @@
 
 @import "simpel-grid-thisisdallas-kopi.css";
 
+
 div{
 	border: 1px solid red;
 }
@@ -17,9 +18,14 @@ img, .medarbejderBillede{
 	width: 160px;
 }
 
-img, .burger{
+/* Vi bliver nød til at ha 2 burger fordi en fejl */
+.burger{
 	height: 90px;
 	width: 90px;
+}
+
+img, .brandStory{
+	height: 300px;
 }
 
 .top{
@@ -52,18 +58,26 @@ img, .burger{
 
 .brandStory{
 	height: 300px;
+	text-align: center;
+}
+
+.center{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .hotbotIkon{
-	height: 200px;
+	height: 310px;
 }
 
 .hotbotTekst{
-	height: 200px;
+	height: 310px;
 }
 
 .produktIkon{
-	height: 150px;
+	height: 300px;
 }
 
 .produktTekst{
@@ -71,7 +85,7 @@ img, .burger{
 }
 
 .omOs{
-	height: 40px;
+	height: 80px;
 }
 
 .medarbejderBillede{
