@@ -26,7 +26,7 @@
 				
 				<div class="mobile-col-1-6 burger">
 					<a href="javascript:void(0)" onclick="showNav">
-						<img src="billeder/burger.png" alt="burger menu ikon" style="height: 100%; width: 100%">
+						<img src="billeder/burger.png" alt="burger menu ikon" style="height: 100%; width: 100%" class="burgerIkon">
 					</a>
 				</div>
 
@@ -125,76 +125,54 @@
 			<!-- Ny sektion /-->
 			<!-- Om os /-->
 			
-			<div class="col-1-1 baggrund4 mobile-col-1-1">
-				<div class="col-6-12 push-3-12 omOs" id="omOs">
+			<div class="col-1-1 baggrund4 mobile-col-1-1 white">
+				<div class="col-1-1 omOs" id="omOs">
 					<h2>Mød medarbejderne</h2>
 				</div>
 
 				<!-- Ny sektion /-->
 				
-				<div>
-				<div class="col-2-12 push-4-12">
-					<img src="billeder/personer/d1.png" alt="Billede af Merete" class="medarbejderBillede" style="height: 100%; width: 100%">
-					
-				</div>
+				<div class="ceo ">
+					<div class="medarbejderBox">
+						<img src="billeder/personer/d1.png" alt="Billede af Merete" class="medarbejderBillede">
+						<p>Merete</p>
+					</div>
 
 
-				<div class="col-2-12">
-					<img src="billeder/personer/m4.png" alt="Billede af Marc" class="medarbejderBillede" style="height: 100%; width: 100%">
-				</div>
-
-				<!-- Ny sektion /-->
-
-				<div class="col-2-12 push-4-12 medarbejderNavn">
-					<p>Merete</p>
-				</div>
-
-				<div class="col-2-12 medarbejderNavn">
-					<p>Marc</p>
+					<div class="medarbejderBox">
+						<img src="billeder/personer/m4.png" alt="Billede af Marc" class="medarbejderBillede">
+						<p>Marc</p>
+					</div>
 				</div>
 
 				<!-- Ny sektion /-->
-				<div class="col-1-1 nulstil">
-					<div class="col-2-12 push-2-12 mobile-col-1-4">
+				<div class="ceo">
+					<div class="medarbejderBox">
 						<img src="billeder/personer/m1.png" alt="Billede af Søren Karlsen" class="medarbejderBillede" style="height: 100%; width: 100%">
+						<p>Søren</p>
 					</div>
 
-					<div class="col-2-12 mobile-col-1-4">
+					<div class="medarbejderBox">
 						<img src="billeder/personer/d2.png" alt="Billede af Lotte Havdal" class="medarbejderBillede" style="height: 100%; width: 100%">
+						<p>Lotte</p>
 					</div>
 
-					<div class="col-2-12 mobile-col-1-4">
+					<div class="medarbejderBox">
 						<img src="billeder/personer/m2.png" alt="Billede af Ole Jakobsen" class="medarbejderBillede" style="height: 100%; width: 100%">
+						<p>Ole</p>
 					</div>
 
-					<div class="col-2-12 mobile-col-1-4">
+					<div class="medarbejderBox">
 						<img src="billeder/personer/m3.png" alt="Billede af Jan Ulrik" 		class="medarbejderBillede" style="height: 100%; width: 100%">
+						<p>Jan</p>
 					</div>
-				</div>
-
-				<!-- Ny Sektion /-->
-
-				<div class="col-2-12 push-2-12 medarbejderNavn mobile-col-1-4">
-					<p>Søren Karlsen</p>
-				</div>
-
-				<div class="col-2-12 medarbejderNavn mobile-col-1-4">
-					<p>Lotte Havdal</p>
-				</div>
-
-				<div class="col-2-12 medarbejderNavn mobile-col-1-4">
-					<p>Ole Jakobsen</p>
-				</div>
-
-				<div class="col-2-12 medarbejderNavn mobile-col-1-4">
-					<p>Jan Ulrik</p>
 				</div>
 			</div>
 			
 			<!-- Ny sektion /-->
 			<!-- Kontaktformular /-->
 			
-			<div class="col-6-12 mobile-col-1-1">
+			<div class="col-6-12 mobile-col-1-1 nulstil">
 				<div class="kontaktFormular" id="kontakt">
 					<form action="mailto:fake.dk@hotmail.com?subject=Contact%20via%20form" method="post" enctype="text/plain">
 					   <p> <label>Dit Navn:</label> </p>
@@ -230,7 +208,7 @@
 		
 		//en funktion som viser vores menupunkter når man kligger på burgeren
 		function showNav(){
-			var x = document.getElementById("myLinks");
+			var x = document.getElementById("navigation");
 			if (x.style.display === "block") {
 				x.style.display = "none";
 			} else {

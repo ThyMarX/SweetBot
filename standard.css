@@ -7,10 +7,6 @@ main{
 	margin: -8px;
 }
 
-div{
-	/*border: 1px solid red;*/
-}
-
 [class*='col-'] {
 	padding-right: 10px;
 	margin-bottom: 10px;
@@ -116,6 +112,7 @@ div{
 }
 
 .medarbejderBillede{
+	width:100%;
 	border-radius: 50%;
 }
 
@@ -143,6 +140,16 @@ div{
 	height: 40px;
 	padding-left: 50px;
 }
-
+.ceo{
+	width: 100%;
+	text-align: center;
+}
+.medarbejderBox{
+	width:15%;
+	display:inline-block;
+}
+.white{
+	color: white;
+}
 
 
