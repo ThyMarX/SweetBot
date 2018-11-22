@@ -5,6 +5,11 @@
 
 main{
 	margin: -8px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+div{
+	border: 1px solid transparent;
 }
 
 [class*='col-'] {
@@ -15,6 +20,7 @@ main{
 /* Vi bliver nød til at ha 2 burger fordi en fejl */
 .burger{
 	padding-top: 10px;
+	margin-bottom: -50px;
 }
 
 .top{
@@ -56,7 +62,7 @@ main{
 	padding-right: 100px;
 	padding-top: 10px;
 	margin-top: -50px;
-	height: 240px;
+	height: 250px;
 }
 
 .hotbotIkon{
@@ -137,8 +143,11 @@ main{
 }
 
 .footer{
-	height: 40px;
+	height: 200px;
 	padding-left: 50px;
+	background-color: #3D6BB4;
+	line-height: 30px;
+	width: 100%;
 }
 .ceo{
 	width: 100%;
@@ -151,5 +160,16 @@ main{
 .white{
 	color: white;
 }
-
-
+.middle{
+	text-align: center;
+	padding-left: 0;
+}
+.linkLookAlike{
+	text-decoration: underline;
+}
+.navigation:hover{
+	opacity: 0.6;
+}
+.burgerIkon:hover{
+	opacity: 0.6;
+}

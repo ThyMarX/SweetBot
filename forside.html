@@ -25,21 +25,23 @@
 				</div>
 				
 				<div class="mobile-col-1-6 burger">
-					<a href="javascript:void(0)" onclick="showNav">
+					<a href="javascript:void(0)" onclick="showNav()">
 						<img src="billeder/burger.png" alt="burger menu ikon" style="height: 100%; width: 100%" class="burgerIkon">
 					</a>
 				</div>
+				
+				<div id="navBar">
+					<div class="col-2-12 navigation push-2-12 mobile-col-1-3">
+						<a href="#produkter"><img src="billeder/menuboks1.png" alt="Navigations ikon nr1" style="height: 100%; width: 100%"></a>
+					</div>
 
-				<div class="col-2-12 navigation hide-on-mobile push-2-12">
-					<a href="#produkter"><img src="billeder/menuboks1.png" alt="Navigations ikon nr1" style="height: 100%; width: 100%"></a>
-				</div>
+					<div class="col-2-12 navigation mobile-col-1-3">
+						<a href="#omOs"><img src="billeder/menuboks2.png" alt="Navigations ikon nr2" style="height: 100%; width: 100%"></a>
+					</div>
 
-				<div class="col-2-12 navigation hide-on-mobile">
-					<a href="#omOs"><img src="billeder/menuboks2.png" alt="Navigations ikon nr2" style="height: 100%; width: 100%"></a>
-				</div>
-
-				<div class="col-2-12 navigation hide-on-mobile">
-					<a href="#kontakt"><img src="billeder/menuboks3.png" alt="Navigations ikon nr3" style="height: 100%; width: 100%"></a>
+					<div class="col-2-12 navigation mobile-col-1-3">
+						<a href="#kontakt"><img src="billeder/menuboks3.png" alt="Navigations ikon nr3" style="height: 100%; width: 100%"></a>
+					</div>
 				</div>
 			
 			<!-- Ny sektion /-->
@@ -197,8 +199,9 @@
 			<!-- Ny sektion /-->
 			<!-- Footer /-->
 			
-			<div class="col-1-1 footer mobile-col-1-1">
-				<p>Cookiepolitik, Persondata, Socialemedier, Copyright, email</p>
+			<div class="col-1-1 footer mobile-col-1-1 white">
+				<p class="linkLookAlike">Cookiepolitik <br> Persondata <br> Handelsbetingelse <br> email</p>
+				<p class="middle"> Copyright ©</p>
 			</div>
 			
 		</div>
@@ -208,11 +211,11 @@
 		
 		//en funktion som viser vores menupunkter når man kligger på burgeren
 		function showNav(){
-			var x = document.getElementById("navigation");
-			if (x.style.display === "block") {
-				x.style.display = "none";
+			var hidden = document.getElementById("navBar");
+			if (hidden.style.display == "none") {
+				hidden.style.display = "block";
 			} else {
-				x.style.display = "block";
+				hidden.style.display = "none";
 			}
 		}
 	</script>

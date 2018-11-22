@@ -1,7 +1,7 @@
 /* CSS Document */
 
 .burger{
-	display: flex;
+	display: block;
 	margin-top: 43px;
 }
 h1{
@@ -49,5 +49,13 @@ h3{
 .medarbejderBox{
 	width: 20%;
 }
+#navBar{
+	display: none;
+}
+.navigation{
+	margin-top: 10px;
+	padding: 2px;
+}
+
 
 
